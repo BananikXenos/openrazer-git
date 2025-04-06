@@ -1,13 +1,13 @@
 pkgbase = openrazer-git
 	pkgdesc = Community-led effort to support Razer peripherals on Linux (git version)
-	pkgver = 3.8.0.r34.gd52042ab
+	pkgver = 42796a5b
 	pkgrel = 1
 	url = https://openrazer.github.io
 	arch = any
 	license = GPL-2.0-or-later
 	makedepends = git
 	makedepends = python-setuptools
-	source = git+https://github.com/openrazer/openrazer.git
+	source = git+https://github.com/BananikXenos/openrazer.git
 	sha256sums = SKIP
 
 pkgname = openrazer-daemon-git

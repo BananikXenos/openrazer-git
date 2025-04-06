@@ -4,19 +4,19 @@
 pkgname=('openrazer-daemon-git' 'openrazer-driver-dkms-git' 'openrazer-meta-git' 'python-openrazer-git')
 pkgbase=openrazer-git
 _pkgbase=openrazer
-pkgver=3.8.0.r34.gd52042ab
+pkgver=42796a5b
 pkgrel=1
 pkgdesc='Community-led effort to support Razer peripherals on Linux (git version)'
 arch=('any')
 url=https://openrazer.github.io
 license=('GPL-2.0-or-later')
 makedepends=('git' 'python-setuptools')
-source=("git+https://github.com/openrazer/openrazer.git")
+source=("git+https://github.com/BananikXenos/openrazer.git")
 sha256sums=('SKIP')
 
 pkgver() {
   cd "$_pkgbase"
-  git describe --long | sed 's/^v//;s/\([^-]*-g\)/r\1/;s/-/./g'
+  git describe --long --always | sed 's/^v//;s/\([^-]*-g\)/r\1/;s/-/./g'
 }
 
 prepare() {
